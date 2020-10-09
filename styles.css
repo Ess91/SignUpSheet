@@ -1,0 +1,138 @@
+body {
+  background-image: url("/images/bg-intro-desktop.png");
+  background-color: #ff7978;
+  font-family: "Poppins", sans-serif;
+}
+
+section h1 {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-top: 200px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 30em;
+  margin-left: 100px;
+  color: white;
+  font-weight: bolder;
+}
+
+section p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  left: 55%;
+  border: 1px solid #5d54a3;
+  background-color: #5d54a3;
+  color: white;
+  padding: 15px 84px 15px 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 55%;
+  top: 23%;
+  flex-direction: column;
+  background-color: white;
+
+  padding: 35px 44px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+  background-color: #32d18d;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #32d18d;
+  padding: 12px 110px 12px 110px;
+}
+
+small {
+  padding-top: 10px;
+  color: darkgray;
+  font-weight: bold;
+}
+
+small a {
+  color: #d83a99;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 1%;
+}
+
+@media screen and (max-width: 375px) {
+  section {
+    position: absolute;
+    top: -30%;
+    left: -20%;
+  }
+
+  section h1 {
+    font-size: 35px;
+    text-align: center;
+    width: 10em;
+  }
+
+  section p {
+    text-align: center;
+    width: 23em;
+  }
+
+  .info {
+    flex-direction: column;
+    top: 43%;
+    left: 10%;
+    padding: 10px 80px 15px 70px;
+  }
+
+  .form-group.row {
+    width: 100%;
+  }
+
+  form {
+    top: 85%;
+    left: 10%;
+    padding-right: 0;
+    padding-left: 15px;
+    margin-right: 20px;
+    width: 84%;
+    margin-top: -140px;
+  }
+
+  button {
+    padding: 15px 50px 15px 50px;
+    font-size: 13px;
+  }
+
+  small {
+    text-align: center;
+  }
+
+  footer {
+    bottom: -37%;
+    left: 20%;
+  }
+}
